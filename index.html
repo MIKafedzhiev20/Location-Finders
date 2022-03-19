@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="styles/home.css">
-    <script src="scripts/home.js"></script>
-</head>
-<body background="https://www.nationsonline.org/maps/Political-World-Map-3360.jpg">
-   <div  id="dim" onclick="dimAndSwitch()"></div>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/jquery.js"></script>
+	<script src="scripts/countdown.js"></script>
 
+    <script src="scripts/main.js"></script>
+    
+</head>
+<body onload="render()">
+    <div>
+        <div id="map">
+        </div>
+        <canvas id="appCanvas" width="1000" height="1250"></canvas>
 </body>
 </html>
-
-
