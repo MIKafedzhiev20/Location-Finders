@@ -26,11 +26,11 @@ body{
 
 #a1{
     position: absolute;
-    left: 5%;
+    left: 2%;
     top: 8%;
     color: white;
     text-decoration: none;
-    font-size: 400%;
+    font-size: 300%;
 }
 
 a:hover{
