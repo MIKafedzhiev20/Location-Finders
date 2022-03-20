@@ -1,0 +1,73 @@
+body{
+    background-color: #1f1f1f;
+}
+
+#rules{
+    position: absolute;
+    font-size: 400%;
+    left: 38.38%;
+    top: 10%;
+    color: white;
+}
+
+#text{
+    position: absolute;
+    font-size: 250%;
+    text-align: center;
+    left: 27%;
+    top: 36%;
+    color: white;
+    width: 42%;
+}
+
+a{
+    text-decoration: none;
+    font-size: 300%;
+    color: white;
+}
+
+#a1{
+    position: absolute;
+    left: 27%;
+    top: 60%;
+}
+
+#a2{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+}
+
+a:hover{
+    color: grey;
+    font-weight: bold;
+}
+
+#logo1{
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    width: 20%;
+    height: 42%;
+}
+#logo2{
+    position: absolute;
+    top: 30%;
+    left: 75%;
+    width: 20%;
+    height: 42%;
+}
+
+#hr1{
+    position: absolute;
+    top: 25%;
+    left: 3%;
+    width: 90%;
+}
+
+#hr2{
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    width: 90%;
+}

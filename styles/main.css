@@ -23,3 +23,17 @@ body{
 .popup img{
     max-width: 60%;
 }
+
+#a1{
+    position: absolute;
+    left: 5%;
+    top: 8%;
+    color: white;
+    text-decoration: none;
+    font-size: 400%;
+}
+
+a:hover{
+    color: grey;
+    font-weight: bold;
+}
