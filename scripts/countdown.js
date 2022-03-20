@@ -1,32 +1,42 @@
 function openCloseFlag(value){
-    /*if(value=="Bulgaria")
+    
+    flag="";
+
+    if(value=="Bulgaria")
     {
-        document.getElementById("flag").src="pictures/flags/bg flag.png";
+        flag="pictures/flags/bg flag.png";
     }
     if(value=="Greece")
     {
-        document.getElementById("flag").src="pictures/flags/greece flag.png";
+        flag="pictures/flags/greece flag.png";
     }
     if(value=="Romania")
     {
-        document.getElementById("flag").src="pictures/flags/romania flag.png";
+        flag="pictures/flags/romania flag.png";
     }
     if(value=="Macedonia")
     {
-        document.getElementById("flag").src="pictures/flags/macedonia flag.png";
+        flag="pictures/flags/macedona flag.png";
     }
     if(value=="Serbia")
     {
-        document.getElementById("flag").src="pictures/flags/serbia flag.png";
+        flag="pictures/flags/serbia flag.png";
     }
     if(value=="Turkey")
     {
-        document.getElementById("flag").src="pictures/flags/turkey flag.png";
-    }*/
+        flag="pictures/flags/turkey flag.png";
+    }
 
-
-    window.open("pages/flag.html",height=600,width=1200);
-    setTimeout(()=>{window.open("pages/drawingApp.html");
-    }, 5001)
-    
+    let popup=document.querySelector(".popup");
+    popup.innerHTML=`<img src="${flag}">`;
+    popup.classList.add("active");
+    setTimeout(()=>{
+        popup.classList.remove("active");
+        window.open("pages/drawingApp.html", 500, 500, resizeble=0)
+    }, 5000)
+    setTimeout(()=>{
+        popup=document.querySelector(".popup");
+        popup.innerHTML=`<img src="${flag}">`;    
+        popup.classList.remove("active");
+    },30000)
 }

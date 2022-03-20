@@ -11,7 +11,7 @@ let prevY = null
 ctx.lineWidth = 5
 
 let draw = false
-
+let enableDraw=true;
 let clrs = document.querySelectorAll(".clr")
 clrs = Array.from(clrs)
 clrs.forEach(clr => {
@@ -24,7 +24,7 @@ window.addEventListener("mousedown", (e) => draw = true)
 window.addEventListener("mouseup", (e) => draw = false)
 
 window.addEventListener("mousemove", (e) => {
-    if(prevX == null || prevY == null || !draw){
+    if(prevX == null || prevY == null || !draw||!enableDraw){
         prevX = e.clientX
         prevY = e.clientY
         return
@@ -42,3 +42,6 @@ window.addEventListener("mousemove", (e) => {
     prevY = currentY
     
 })
+setTimeout(()=>{
+    enableDraw=false
+}, 20000)

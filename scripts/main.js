@@ -36,12 +36,12 @@ function render() {
         var circle = new theCircle(x, y, radius);
         circles.push(circle);
     };
-    drawCircle(context, 500, canvas.height / 2, "white", 100, 5, "white", "#000", "center", "bold 30px Arial", "Bulgaria", circles);
-    drawCircle(context, 240, canvas.height - 295, "white", 80, 5, "white", "#000", "center", "bold 30px Arial", "Greece", circles);
-    drawCircle(context, 445, 250, "white", 170, 5, "white", "#000", "white", "bold 30px Arial", "Romania", circles);
-    drawCircle(context, 240, canvas.height - 520, "white", 50, 5, "white", "#000", "center", "bold 30px Arial", "Macedonia", circles);
-    drawCircle(context, 160, canvas.height - 795, "white", 70, 5, "white", "#000", "center", "bold 30px Arial", "Serbia", circles);
-    drawCircle(context, 840, canvas.height - 255, "white", 150, 5, "white", "#000", "center", "bold 30px Arial", "Turkey", circles);
+    drawCircle(context, 500, canvas.height / 2, "#1f1f1f", 100, 5, "#1f1f1f", "white", "center", "bold 30px Arial", "Bulgaria", circles);
+    drawCircle(context, 240, canvas.height - 295, "#1f1f1f", 80, 5, "#1f1f1f", "white", "center", "bold 30px Arial", "Greece", circles);
+    drawCircle(context, 445, 250, "#1f1f1f", 170, 5, "#1f1f1f", "white", "#1f1f1f", "bold 30px Arial", "Romania", circles);
+    drawCircle(context, 240, canvas.height - 520, "#1f1f1f", 50, 5, "#1f1f1f", "white", "center", "bold 30px Arial", "Macedonia", circles);
+    drawCircle(context, 160, canvas.height - 795, "#1f1f1f", 70, 5, "#1f1f1f", "white", "center", "bold 30px Arial", "Serbia", circles);
+    drawCircle(context, 840, canvas.height - 255, "#1f1f1f", 150, 5, "#1f1f1f", "white", "center", "bold 30px Arial", "Turkey", circles);
     $('#appCanvas').click(function (e) {
         var clickedX = e.pageX - this.offsetLeft;
         var clickedY = e.pageY - this.offsetTop;
